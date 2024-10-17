@@ -1,3 +1,19 @@
 main {
     min-height: calc(100vh - 160px);
   }
+
+  .card-body {
+    max-height: 200px;
+    overflow-y: auto; /* Añade scroll cuando el contenido es muy largo */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover; /* Para que las imágenes mantengan su proporción y cubran bien el espacio */
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
